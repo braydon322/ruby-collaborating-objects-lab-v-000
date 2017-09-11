@@ -15,21 +15,21 @@ class Song
     song_name = song_string[1]
     song_artist = song_string[0]
 
-    exists? = nil
-    
+    exists = nil
+
     @@songs.each do |song|
       if song = song_name
-        exists? = true
+        exists = true
       else
-        exists? = false
+        exists = false
       end
     end
 
-      if !exists?
+      if !exists
         new_song = Song.new(song_name)
         new_song.artist = song_artist
       end
-    
+
     binding.pry
   end
 
