@@ -37,8 +37,11 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    binding.pry
    self.all.detect {|artist| artist.name == name} || Artist.new(name).save
+   #Name - Michael Jackson
+   #<Artist:0x0000000239dbe8 @name="Michael Jackson", @songs=[]>
+   # => Michael Jackson == @name="Michael Jackson"
+   #Artist.new(Michael Jackson)
 
   end
 
