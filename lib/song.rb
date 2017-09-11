@@ -11,15 +11,12 @@ class Song
     #Splits File Into Array
     songs = filename.split(" - ")
     #Michael Jackson - Thriller - mp3
-
     song_artist = songs[0]
     #Michael Jackson
-
     song_name = songs[1]
     #Thriller
-
     song = self.new(song_name)
-    binding.pry
+    #<Song:0x00000001e09d30 @name="Thriller">
     artist = Artist.find_or_create_by_name(song_artist)
     artist.add_song(song)
   end
