@@ -8,9 +8,14 @@ class MP3Importer
 
   def import
     
+    Song.new_by_filename(song)
   end
 
-  def files
+  def files  
+   Dir.foreach(@file_path) { |x|
+     if x.include?(".mp3")
+        @@files << x
+      end  }
     @@files
   end
 
