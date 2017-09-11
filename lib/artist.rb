@@ -19,7 +19,7 @@ class Artist
   def save
   end
 
-  def self.all?
+  def self.all
   end
 
 
