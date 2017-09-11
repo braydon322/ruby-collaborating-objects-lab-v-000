@@ -16,5 +16,8 @@ class Artist
     @@songs
   end
 
+  def save
+  end
+
 
 end
