@@ -1,9 +1,4 @@
-require 'pry'
-
 class Song
-
-  @@songs = []
-
   attr_accessor :name, :artist
 
   def initialize(name)
@@ -30,7 +25,7 @@ class Song
         new_song.artist = song_artist
         @@songs << self
       end
-      
+
   end
 
 end
