@@ -28,6 +28,7 @@ class Song
       if !exists
         new_song = Song.new(song_name)
         new_song.artist = song_artist
+        @@songs << self
       end
 
   end
