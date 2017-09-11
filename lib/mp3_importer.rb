@@ -1,3 +1,5 @@
+require 'pry'
+
 class MP3Importer
   attr_reader :path, :files
   def initialize(path)
