@@ -12,7 +12,7 @@ class Song
 
     song_artist = songs[0]
     #Michael Jackson
-    
+
     song_name = songs[1]
     #Thriller
 
