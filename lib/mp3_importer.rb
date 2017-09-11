@@ -3,7 +3,6 @@ class MP3Importer
   @@files = []
 
   def initialize(file_path)
-    @@files.clear
     @path = file_path
   end
 
