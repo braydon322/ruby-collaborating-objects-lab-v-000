@@ -14,7 +14,6 @@ class Artist
   def add_song(song)
    @songs << song
    #<Song:0x00000001b70330 @name="Rock With You">
-   binding.pry
    song.artist = self
    # ****SELF****
    #   #<Artist:0x00000001b70240
@@ -25,6 +24,7 @@ class Artist
 
   def songs
    @songs
+   #<Song:0x00000001b70330 @name="Rock With You">
   end
 
   def save
@@ -38,6 +38,7 @@ class Artist
 
   def self.find_or_create_by_name(name)
    self.all.detect {|artist| artist.name == name} || Artist.new(name).save
+   
   end
 
   def print_songs
