@@ -25,9 +25,10 @@ class MP3Importer
 
   def import
     files.each do |file|
-        binding.pry
       Song.new_by_filename(file)
     end
+
+    Artist.all.uniq
   end
 
   # def size=(value)
