@@ -42,10 +42,11 @@ class Artist
    #<Artist:0x0000000239dbe8 @name="Michael Jackson", @songs=[]>
    # => Michael Jackson == @name="Michael Jackson"
    #Artist.new(Michael Jackson)
-
   end
 
   def print_songs
    self.songs.each {|song| puts song.name}
+   #<Artist:0x0000000239dbe8 @name="Michael Jackson", @songs=[]>
+   #Michael Jackson
   end
 end
