@@ -1,5 +1,7 @@
 class MP3Importer
 
+  @@files = []
+  
   def initialize(file_path)
     @path = file_path
   end
@@ -8,6 +10,7 @@ class MP3Importer
   end
 
   def files
+    
   end
 
   def path
