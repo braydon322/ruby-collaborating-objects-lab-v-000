@@ -23,6 +23,7 @@ class Artist
   end
 
   def self.all
+    @@artists
   end
 
 
