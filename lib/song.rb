@@ -30,7 +30,7 @@ class Song
         new_song.artist = song_artist
         @@songs << self
       end
-
+      
   end
 
 end
