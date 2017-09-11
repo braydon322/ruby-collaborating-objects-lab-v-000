@@ -8,12 +8,18 @@ class Artist
   def initialize(name)
    @name = name
    @songs= []
+   #[]
   end
 
   def add_song(song)
    @songs << song
+   #<Song:0x00000001b70330 @name="Rock With You">
    binding.pry
    song.artist = self
+   # ****SELF****
+   #   #<Artist:0x00000001b70240
+   # @name="Michael Jackson",
+   # @songs=[#<Song:0x00000001b70330 @name="Rock With You">]>
    song
   end
 
