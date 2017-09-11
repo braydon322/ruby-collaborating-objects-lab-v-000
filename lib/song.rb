@@ -9,7 +9,7 @@ class Song
     artist_name, song_name, filetype = filename.split(" - ")
     new_song = self.new(song_name)
     artist = Artist.find_or_create_by_name(artist_name)
-    artist.add_song(song)
+    artist.add_song(song_name)
   end
 
 end
