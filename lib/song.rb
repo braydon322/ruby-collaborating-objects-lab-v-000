@@ -18,8 +18,8 @@ class Song
   def self.new_by_filename(filename)
   new_array = filename.split(" - ")
   newer_array = []
-
-  new_array[1]
+  # 
+  # new_array[1]
   #
   # i = 0
   #
@@ -42,16 +42,17 @@ class Song
   #   new_song
   #
   # end
-  # Artist.all.each do |artist|
-  #   if artist.name == new_array[1]
-  #     newer_array << new_array[1]
-  #   end
-  # end
-  #
-  #   return newer_array
-  # new_song = self.new(new_array[1])
-  # new_song.artist = Artist.find_or_create_by_name(new_array[0])
-  # new_song
+  
+  Artist.all.each do |artist|
+    if artist.name == new_array[1]
+      newer_array << new_array[1]
+    end
+  end
+  
+    return newer_array
+  new_song = self.new(new_array[1])
+  new_song.artist = Artist.find_or_create_by_name(new_array[0])
+  new_song
   end
 
   def self.create(name)
