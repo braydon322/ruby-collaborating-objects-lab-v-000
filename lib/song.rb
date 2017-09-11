@@ -30,7 +30,6 @@ class Song
         new_song.artist = song_artist
       end
 
-    binding.pry
   end
 
 end
