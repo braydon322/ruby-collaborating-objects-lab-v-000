@@ -13,7 +13,7 @@ class Song
     song_name = song_string[1]
     song_artist = song_string[0]
     new_song = Song.new(song_name)
-    new_song.artist = 
+    new_song.artist = song_artist
     binding.pry
   end
 
